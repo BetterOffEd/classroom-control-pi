@@ -23,5 +23,5 @@
 
 node default {
 #...
-notify { "Hello world! I am ${::fqdn}": }
+notify { "Changed - Hello world! I am ${::fqdn}": }
 }
