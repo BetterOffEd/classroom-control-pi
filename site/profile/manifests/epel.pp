@@ -1,3 +1,3 @@
-class profile::epel {
-
+class profile::epel { 
+  include epel
 }
