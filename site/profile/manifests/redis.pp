@@ -1,4 +1,7 @@
 class profile::redis {
   include profile::epel
-  maxmemory => 10mb
+
+  class {'redis':
+    maxmemory => 10mb
+  }
 }
