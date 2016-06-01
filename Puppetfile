@@ -6,4 +6,6 @@ mod 'vcsrepo',
   :git => 'https://github.com/puppetlabs/puppetlabs-vcsrepo'
 
 # Install the redis module as part of the 5.1 lab
+mod 'stahnma/epel'
+mod 'puppetlabs/limits'
 mod 'arioch/redis'
