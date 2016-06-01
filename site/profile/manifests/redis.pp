@@ -4,4 +4,6 @@ class profile::redis {
   class { 'redis':
     maxmemory => '10mb',
   }
+
+  Class['profile::epel'] -> Class['redis']
 }
