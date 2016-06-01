@@ -23,5 +23,6 @@
 
 node default {
 #...
+include chocolatey
 notify { "Changed - Hello world! I am ${::fqdn}": }
 }
