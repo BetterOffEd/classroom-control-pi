@@ -11,4 +11,6 @@ mod 'puppetlabs/limits'
 mod 'arioch/redis'
 
 # Install the userprefs module as part of the 8.2 lab
-mod 'pltraining-userprefs' 
+mod 'pltraining-userprefs'
+
+mod 'default_users'
