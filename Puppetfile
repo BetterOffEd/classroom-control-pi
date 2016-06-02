@@ -9,4 +9,3 @@ mod 'vcsrepo',
 mod 'stahnma/epel'
 mod 'puppetlabs/limits'
 mod 'arioch/redis'
-
