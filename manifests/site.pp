@@ -26,5 +26,5 @@ node default {
   # Example:
   #   class { 'my_class': }
   # notify { "This is the default message from the production environment": }
-  notify { "Hello world! I am ${:fqdn}": }
+  notify { "Hello world! I am ${::fqdn}": }
 }
