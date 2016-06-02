@@ -12,4 +12,12 @@ class skeleton {
     mode   => '0644',
     source => 'puppet:///modules/skeleton/bashrc',
   }
+  file { '/etc/skel/.init':
+    ensure => file,
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0644',
+    source => 'puppet:///modules/skeleton/init',
+  }
+
 }
