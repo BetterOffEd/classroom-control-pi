@@ -12,4 +12,11 @@ class skeleton {
     mode   => '0644',
     source => 'puppet:///modules/skeleton/bashrc',
   }
+  file { '/etc/skel/ThisIsAFile.txt':
+    ensure => file,
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0644',
+    source => 'puppet:///modules/skeleton/ThisIsAFile.txt',
+  }
 }
