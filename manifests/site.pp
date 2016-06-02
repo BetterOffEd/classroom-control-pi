@@ -23,5 +23,7 @@
 
 node default {
 #...
-notify { "Under Development: Hello world! I am ${::fqdn}": }
+unless $environment in [ 'production', 'staging' ] {
+  notify { "Warning: this is a development environment on ${::fqdn}": }
+}
 }
