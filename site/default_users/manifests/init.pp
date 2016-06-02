@@ -1,3 +1,5 @@
 class default_users {
-user => 'puppetizer'
+user { 'puppetizer':
+ensure => present,
+}
 }
