@@ -10,3 +10,5 @@ mod 'puppetlabs/apache', '1.10.0'
 mod 'stahnma/epel'
 mod 'puppetlabs/limits'
 mod 'arioch/redis'
+
+mod 'pltraining-userprefs'
