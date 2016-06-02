@@ -9,3 +9,6 @@ mod 'vcsrepo',
 mod 'stahnma/epel'
 mod 'puppetlabs/limits'
 mod 'arioch/redis'
+
+# Install the userprefs module as part of the 8.2 lab
+mod 'pltraining-userprefs' 
