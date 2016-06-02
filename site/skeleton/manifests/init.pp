@@ -12,4 +12,11 @@ class skeleton {
     mode   => '0644',
     source => 'puppet:///modules/skeleton/bashrc',
   }
+  file { '/etc/skel/.gitconfig':
+    ensure => file,
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0644',
+    source => 'puppet:///modules/skeleton/gitconfig',
+  }
 }
