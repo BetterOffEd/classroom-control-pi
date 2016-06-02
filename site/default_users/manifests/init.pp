@@ -1,4 +1,4 @@
-class ::default_user {
+class default_user {
   user {  'puppetizer':
     ensure => present,
   }
