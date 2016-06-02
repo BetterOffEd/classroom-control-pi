@@ -22,6 +22,9 @@
 # specified in the console for that node.
 
 node default {
+  unless $environment in [ 'production', 'staging' ] {
+  notify { "Warning: this is a development environment on ${::fqdn}": }
+  }
 #...
 notify { "Changed - Hello world! I am ${::fqdn}": }
 }
