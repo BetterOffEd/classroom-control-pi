@@ -25,5 +25,6 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  notify { "This is the default message from the production environment": }
+  # notify { "This is the default message from the production environment": }
+  notify { "Hello world! I am ${:fqdn{": }
 }
