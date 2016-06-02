@@ -6,9 +6,6 @@ $path = $osfamily ? {
 -%>
 file { '<%= $path %>':
   ensure  => file,
-  owner   => 'root',
-  group   => 'root',
-  mode    => '0644',
   content => "Hey, Puppet is fun!\n",
 }
 
