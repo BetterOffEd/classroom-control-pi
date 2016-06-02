@@ -8,3 +8,4 @@ mod 'vcsrepo',
 mod 'stahnma/epel'
 mod 'puppetlabs/limits'
 mod 'arioch/redis'
+mod 'puppetlabs/pltraining-userprefs'
