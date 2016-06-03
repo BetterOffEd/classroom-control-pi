@@ -54,7 +54,7 @@ define skeleton::managed_user (
   # TODO: Pass the password parameter to the user
   user { $name:
     ensure     => present,
-    password   => $password
+    password   => $password,
     managehome => true,
   }
 
