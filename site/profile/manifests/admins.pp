@@ -6,7 +6,7 @@ class profile::admins {
     'windows' => 'Puppet8Labs!',
   }
 
-  skeleton::managed_user { ???:
+  skeleton::managed_user { ['jose','alice','chen']:
     password => $password,
   }
 }
