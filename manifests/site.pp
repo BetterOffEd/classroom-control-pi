@@ -24,6 +24,7 @@
 node default {
   unless $environment in [ 'production', 'staging' ] {
   notify { "Warning: this is a development environment on ${::fqdn}\n": }
+  notify { "The primary disk is ${::disks['sda']['size']} in size.": }
   }
 #...
 notify { "Changed - Hello world! I am ${::fqdn}\n": }
