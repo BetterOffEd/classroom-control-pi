@@ -13,5 +13,6 @@ class profile::redis (
       maxmemory => '10mb',
       bind => $ipaddress,
       slaveof => 'master.puppetlabs.vm 6479',
+    }
   }
 }
