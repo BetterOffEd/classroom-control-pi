@@ -8,7 +8,7 @@ class aliases (
         owner   => 'root',
         group   => 'root',
         mode    => '0644',
-        content => ???,
+        content => epp('aliases.pp.epp', { admin => $admin }),
     }
     exec { '/usr/bin/newaliases':
         refreshonly => true,
