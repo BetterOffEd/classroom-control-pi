@@ -23,8 +23,8 @@
 
 node default {
   unless $environment in [ 'production', 'staging' ] {
-  notify { "Warning: this is a development environment on ${::fqdn}": }
+  notify { "Warning: this is a development environment on ${::fqdn}\n": }
   }
 #...
-notify { "Changed - Hello world! I am ${::fqdn}": }
+notify { "Changed - Hello world! I am ${::fqdn}\n": }
 }
