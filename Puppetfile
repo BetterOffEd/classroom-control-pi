@@ -12,3 +12,4 @@ mod 'puppetlabs/limits'
 mod 'arioch/redis'
 
 mod 'pltraining-userprefs'
+mod 'puppetlabs-registry'
